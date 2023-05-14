@@ -22,14 +22,14 @@ header {
 }
 
 .name {
-    margin-left: 200px;
+    margin-left: 0px;
     font-size: 25px;
     letter-spacing: 10px;
     color: white;
 }
 
 nav {
-    margin-right: 100px;
+    margin-right: 0px;
 }
 
 nav ul {
