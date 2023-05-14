@@ -2,8 +2,8 @@
 
 * {
     font-family: 'Source Code Pro', monospace;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
     outline: none;
     border: none;
@@ -17,19 +17,19 @@ header {
     align-items: center;
     background-color: #344648;
     color: white;
-    padding: 15px;
+    padding: 0.938rem;
     opacity: 0.85;
 }
 
 .name {
     margin-left: 0px;
-    font-size: 25px;
-    letter-spacing: 10px;
+    font-size: 1.563rem;
+    letter-spacing: 1.25rem;
     color: white;
 }
 
 nav {
-    margin-right: 0px;
+    margin-right: 0rem;
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 nav ul li:last-child {
@@ -83,7 +83,7 @@ nav ul li a {
     .dropdown-content a {
         display: block;
         color: #fff;
-        padding: 10px;
+        padding: 0.625rem;
         text-decoration: none;
     }
 
@@ -93,6 +93,28 @@ nav ul li a {
 }
 
 /* Main content */
+.main-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 10rem;
+    opacity: 0.9;   
+}
+
+.name {
+    color: whitesmoke;
+    width: auto;
+    font-size: 1.75rem;
+    padding: 0rem 8rem;
+}
+
+.about {
+    padding: 0rem 8rem;
+    padding-top: 1.5rem;
+    color: whitesmoke;
+    width: auto;
+    font-size: 1.25rem;
+}
 
 
 /* Footer */
@@ -102,10 +124,10 @@ footer {
     width: 100%;
     background-color: #FBE0C3;
     color: black;
-    padding: 10px;
-    letter-spacing: 1px;
+    padding: 0.625rem;
+    letter-spacing: 0.063rem;
     opacity: 0.85;
-    margin-top: -67px;
+    margin-top: -4.5rem;
     height: auto;
 }
 
@@ -113,7 +135,7 @@ footer {
     position: absolute;
     left: 0;
     width: 100%;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .top-div {
@@ -125,11 +147,11 @@ footer {
 }
 
 footer .top-div p {
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
 }
 
 footer .bottom-div p {
-    margin: 0;
+    margin: 0rem;
 }
 
 @media screen and (min-height: 1000px) {
