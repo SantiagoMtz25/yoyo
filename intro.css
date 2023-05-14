@@ -12,6 +12,7 @@
 }
 
 header {
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,11 +95,12 @@ nav ul li a {
 
 /* Main content */
 .main-content {
-    position: relative;
+    position: static;
     width: 100%;
     height: auto;
     top: 10rem;
     opacity: 0.9;   
+    height: auto;
 }
 
 .name {
@@ -106,6 +108,7 @@ nav ul li a {
     width: auto;
     font-size: 1.75rem;
     padding: 0rem 8rem;
+    padding-top: 12rem;
     letter-spacing: 1.25rem;
 }
 
@@ -120,6 +123,7 @@ nav ul li a {
 
 /* Footer */
 footer {
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -127,8 +131,8 @@ footer {
     color: black;
     padding: 0.625rem;
     letter-spacing: 0.063rem;
-    opacity: 0.85;
-    margin-top: -4.5rem;
+    opacity: 1;
+    margin-top: -4.2rem;
     height: auto;
 }
 
@@ -155,8 +159,3 @@ footer .bottom-div p {
     margin: 0rem;
 }
 
-@media screen and (min-height: 1000px) {
-    footer {
-        display: block;
-    }
-}
