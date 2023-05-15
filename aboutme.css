@@ -9,6 +9,7 @@
     border: none;
     text-decoration: none;
     outline: red dashed 1px;
+    box-sizing: border-box;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
     background-color: #344648;
     color: white;
     padding: 0.938rem;
-    opacity: 0.85;
+    opacity: 1;
 }
 
 .name1 {
@@ -44,8 +45,8 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
     display: flex;
 }
 
@@ -54,7 +55,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+    margin-right: 0rem;
 }
 
 nav ul li a {
@@ -73,7 +74,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 50rem) {
     nav ul {
         display: none;
     }
@@ -102,69 +103,48 @@ nav ul li a {
     }
 }
 
-/* Main content */
-.main-content {
-    position: static;
-    width: 100%;
-    height: auto;
-    top: 10rem;
-    opacity: 0.9;   
-    height: auto;
-}
-
-.name {
-    color: whitesmoke;
-    width: auto;
-    font-size: 1.75rem;
-    padding: 0rem 8rem;
-    padding-top: 12rem;
-    letter-spacing: 1.25rem;
-}
-
-.about {
-    padding: 0rem 8rem;
-    padding-top: 1.5rem;
-    color: whitesmoke;
-    width: auto;
-    font-size: 1.25rem;
-}
-
-
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FBE0C3;
-    color: black;
-    padding: 0.625rem;
-    letter-spacing: 0.063rem;
-    opacity: 1;
-    margin-top: -4.2rem;
-    height: auto;
-}
-
-.top-div .bottom-div {
+.custom-shape-divider-top-1684111336 {
     position: absolute;
-    left: 0;
+    top: 8%;
+    left: 0rem;
     width: 100%;
-    margin-right: 1.25rem;
+    overflow: hidden;
+    line-height: 0rem;
 }
 
-.top-div {
-    top: 0;
+.custom-shape-divider-top-1684111336 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 0.081rem);
+    height: 2.938rem;
 }
 
-.bottom-div {
-    top: 0;
+.custom-shape-divider-top-1684111336 .shape-fill {
+    fill: #344648;
 }
 
-footer .top-div p {
-    margin-bottom: 0.313rem;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0rem;
+}
+  
+.grid-item {
+    background-color: lightgray;
+    height: 20rem;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer .bottom-div p {
-    margin: 0rem;
+.grid-item p {
+    text-align: center;
 }
 
+@media screen and (max-width: 50rem) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
