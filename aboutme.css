@@ -24,7 +24,7 @@ header {
 }
 
 .name1 {
-    margin-left: 0px;
+    margin-left: 0rem;
     font-size: 1.563rem;
     letter-spacing: 1.25rem;
     color: white;
@@ -110,6 +110,7 @@ nav ul li a {
     width: 100%;
     overflow: hidden;
     line-height: 0rem;
+    z-index: 1;
 }
 
 .custom-shape-divider-top-1684111336 svg {
@@ -132,7 +133,7 @@ nav ul li a {
 .grid-item {
     background-color: lightgray;
     height: 20rem;
-    padding: 1.25rem;
+    padding: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,8 +143,14 @@ nav ul li a {
     text-align: center;
 }
 
-.grid-item img {
-    background-repeat: no-repeat;
+.grid-item .img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 
@@ -178,10 +185,13 @@ nav ul li a {
 .content .heading {
     font-weight: 700;
     font-size: 2rem;
+    padding: 0.3rem;
 }
 
 .content .para {
     line-height: 1.5;
+    font-weight: 400;
+    padding: 0.45rem;
 }
 
 .content:hover {
@@ -191,7 +201,7 @@ nav ul li a {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    background: linear-gradient(-45deg, #FFBB98 0%, #7D8E95 100%);
     border-radius: 0.313rem;
     box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.2);
 }
