@@ -105,6 +105,7 @@ nav ul li a {
     }
 }
 
+/* Below header */
 .custom-shape-divider-top-1684111336 {
     position: absolute;
     top: 8%;
@@ -126,6 +127,7 @@ nav ul li a {
     fill: #344648;
 }
 
+/* Grid Containers */ 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -212,6 +214,7 @@ nav ul li a {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+/* Cards with photos and information */ 
 .content {
     display: flex;
     flex-direction: column;

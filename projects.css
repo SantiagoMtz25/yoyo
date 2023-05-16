@@ -23,7 +23,7 @@ header {
 }
 
 .name1 {
-    margin-left: 0px;
+    margin-left: 0rem;
     font-size: 1.563rem;
     letter-spacing: 1.25rem;
     color: white;
@@ -73,7 +73,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 50rem) {
     nav ul {
         display: none;
     }
@@ -100,4 +100,135 @@ nav ul li a {
     .dropdown:hover .dropdown-content {
         display: block;
     }
+}
+
+/* Below header */
+.custom-shape-divider-top-1684270584 {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-top-1684270584 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 0.081rem);
+    height: 2.938rem;
+}
+
+.custom-shape-divider-top-1684270584 .shape-fill {
+    fill: #344648;
+}
+
+/* Grid Containers */ 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0rem;
+}
+
+.grid-item {
+    background-color: lightgray;
+    height: 20rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 50rem) {
+    .grid-item:nth-child(1) {
+        order: 1;
+    }
+
+    .grid-item:nth-child(2) {
+        order: 2;
+    }
+
+    .grid-item:nth-child(3) {
+        order: 3;
+    }
+
+    .grid-item:nth-child(4) {
+        order: 4;
+    }
+
+    .grid-item:nth-child(5) {
+        order: 6;
+    }
+
+    .grid-item:nth-child(6) {
+        order: 5;
+    }
+
+    .grid-item:nth-child(7) {
+        order: 7;
+    }
+
+    .grid-item:nth-child(8) {
+        order: 8;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Programming skills */ 
+.card {
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.25rem;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.body {
+    padding: 1.25rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+
+.skill-name {
+    width: 33.3%;
+    font-size: 1rem;
+}
+
+.skill-level {
+    width: 10rem;
+    height: 0.625rem;
+    background-color: #eee;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    margin-left: 1.25rem;
+}
+
+.skill-percent {
+    background-color: #333;
+    height: 100%;
+}
+
+.skill-percent-number {
+    margin-left: 1.25rem;
+    font-size: 1rem;
 }
