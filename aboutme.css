@@ -41,6 +41,7 @@ a:visited {
 
 nav {
     margin-right: 0rem;
+    z-index: 3;
 }
 
 nav ul {
@@ -77,6 +78,7 @@ nav ul li a {
 @media only screen and (max-width: 50rem) {
     nav ul {
         display: none;
+        z-index: 3;
     }
 
     .dropdown {
@@ -137,6 +139,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .grid-item p {
@@ -151,10 +154,46 @@ nav ul li a {
     top: 0;
     left: 0;
     z-index: 0;
+    transition: transform 0.3s ease-in-out;
 }
 
+.grid-item .img1:hover {
+    transform: scale(1.05);
+}
 
 @media screen and (max-width: 50rem) {
+    .grid-item:nth-child(1) {
+        order: 2;
+    }
+
+    .grid-item:nth-child(2) {
+        order: 1;
+    }
+
+    .grid-item:nth-child(3) {
+        order: 3;
+    }
+
+    .grid-item:nth-child(4) {
+        order: 4;
+    }
+
+    .grid-item:nth-child(5) {
+        order: 6;
+    }
+
+    .grid-item:nth-child(6) {
+        order: 5;
+    }
+
+    .grid-item:nth-child(7) {
+        order: 7;
+    }
+
+    .grid-item:nth-child(8) {
+        order: 8;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -204,6 +243,7 @@ nav ul li a {
     background: linear-gradient(-45deg, #FFBB98 0%, #7D8E95 100%);
     border-radius: 0.313rem;
     box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .card::before {
@@ -224,4 +264,40 @@ nav ul li a {
 
 .card:hover {
     box-shadow: none;
+}
+
+/* Footer */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FBE0C3;
+    color: black;
+    padding: 0.625rem;
+    letter-spacing: 0.063rem;
+    opacity: 1;
+    height: auto;
+}
+
+.top-div .bottom-div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-right: 1.25rem;
+}
+
+.top-div {
+    top: 0;
+}
+
+.bottom-div {
+    top: 0;
+}
+
+footer .top-div p {
+    margin-bottom: 0.313rem;
+}
+
+footer .bottom-div p {
+    margin: 0rem;
 }
