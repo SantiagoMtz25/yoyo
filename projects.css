@@ -86,7 +86,7 @@ nav ul li a {
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #333;
+        background-color: #344648;
         z-index: 1;
     }
 
@@ -141,6 +141,10 @@ nav ul li a {
     overflow: hidden;
 }
 
+.double-width {
+    grid-column: span 2;
+}
+
 @media screen and (max-width: 50rem) {
     .grid-item:nth-child(1) {
         order: 1;
@@ -182,7 +186,7 @@ nav ul li a {
 
 /* Programming skills */ 
 .card {
-    width: 90%;
+    width: 45%;
     background-color: #fff;
     box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1);
     border-radius: 0.625rem;
@@ -192,10 +196,9 @@ nav ul li a {
 }
 
 .header {
-    background-color: #333;
+    background-color: #344648;
     color: #fff;
     padding: 1.25rem;
-    text-align: center;
     font-size: 1.125rem;
 }
 
@@ -215,7 +218,7 @@ nav ul li a {
 }
 
 .skill-level {
-    width: 10rem;
+    width: 50%;
     height: 0.625rem;
     background-color: #eee;
     border-radius: 0.625rem;
@@ -224,7 +227,7 @@ nav ul li a {
 }
 
 .skill-percent {
-    background-color: #333;
+    background-color: #344648;
     height: 100%;
 }
 
@@ -232,3 +235,5 @@ nav ul li a {
     margin-left: 1.25rem;
     font-size: 1rem;
 }
+
+/* Second Card */
