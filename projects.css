@@ -102,7 +102,7 @@ nav ul li a {
     }
 }
 
-/* Grid Containers */ 
+/* Grid Containers */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -163,7 +163,7 @@ nav ul li a {
 
 }
 
-/* Programming skills */ 
+/* Programming skills */
 .card {
     width: 55%;
     background-color: #FBE0C3;
@@ -215,3 +215,42 @@ nav ul li a {
 }
 
 /* Second Card */
+.grid-item .card-2 {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.212);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.grid-item .card-2::before {
+    content: '---IoT Project---';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1.25rem;
+    color: rgb(51, 51, 51);
+    font-size: 1.25sem;
+    font-weight: 700;
+}
+
+.grid-item .card-2 div {
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    transition: all 0.5s;
+    background-image: url(Pruebas_arduino.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item .card-2:hover div {
+    transform: translateY(-2rem);
+}
