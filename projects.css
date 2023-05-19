@@ -251,6 +251,48 @@ nav ul li a {
     height: 100%;
 }
 
+.grid-item.grid-item:nth-child(5) .card-2 div {
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    transition: all 0.5s;
+    background-image: url(Pruebas_arduino.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item.grid-item:nth-child(6) .card-2 div {
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    transition: all 0.5s;
+    background-image: url(Pruebas_arduino.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item.grid-item:nth-child(9) .card-2 div {
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    transition: all 0.5s;
+    background-image: url(Pruebas_arduino.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .grid-item .card-2:hover div {
     transform: translateY(-2rem);
 }
