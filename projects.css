@@ -244,7 +244,7 @@ nav ul li a {
     background-image: url(Pruebas_arduino.jpeg);
     background-size: cover;
     background-position: center;
-    position: relative; 
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -258,7 +258,7 @@ nav ul li a {
     background-image: url(Pruebas_arduino.jpeg);
     background-size: cover;
     background-position: center;
-    position: relative; 
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -272,7 +272,7 @@ nav ul li a {
     background-image: url(Pruebas_arduino.jpeg);
     background-size: cover;
     background-position: center;
-    position: relative; 
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -286,7 +286,7 @@ nav ul li a {
     background-image: url(Pruebas_arduino.jpeg);
     background-size: cover;
     background-position: center;
-    position: relative; 
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -295,4 +295,44 @@ nav ul li a {
 
 .grid-item .card-2:hover div {
     transform: translateY(-2rem);
+}
+
+.card3 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #344648;
+    border-radius: 0rem;
+    z-index: 1;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 0.563rem;
+}
+
+.circle {
+    padding: 0.25rem;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0.063rem;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
 }
