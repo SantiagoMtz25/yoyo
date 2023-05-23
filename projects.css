@@ -336,3 +336,7 @@ nav ul li a {
 .green {
     background-color: #00ca4e;
 }
+
+.card3 .card_content {
+    color: white;
+}
