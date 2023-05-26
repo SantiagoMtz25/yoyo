@@ -214,7 +214,7 @@ nav ul li a {
     font-size: 1rem;
 }
 
-/* Second Card */
+/* Second Card with images */
 .grid-item .card-2 {
     width: 100%;
     height: 100%;
@@ -255,7 +255,7 @@ nav ul li a {
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.212);
     cursor: pointer;
     transition: all 0.5s;
-    background-image: url(Pruebas_arduino.jpeg);
+    background-image: url(paginaphp.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -269,7 +269,7 @@ nav ul li a {
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.212);
     cursor: pointer;
     transition: all 0.5s;
-    background-image: url(Pruebas_arduino.jpeg);
+    background-image: url(spo.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -283,7 +283,7 @@ nav ul li a {
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.212);
     cursor: pointer;
     transition: all 0.5s;
-    background-image: url(Pruebas_arduino.jpeg);
+    background-image: url(pass.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -297,46 +297,61 @@ nav ul li a {
     transform: translateY(-2rem);
 }
 
-.card3 {
+/* Cards with text */
+.grid-item .card-3 {
+    position: relative;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    background-color: #344648;
-    border-radius: 0rem;
+    background: lightgrey;
+    box-shadow: #d11bff42 0 0.9375rem 2.5rem -0.3125rem;
     z-index: 1;
+    border-radius: 0rem;
+    overflow: hidden;
 }
 
-.tools {
-    display: flex;
-    align-items: center;
-    padding: 0.563rem;
+.grid-item .card-3 .card__content {
+    background: linear-gradient(rgba(255, 255, 255, 0.473), rgba(150, 150, 150, 0.25));
+    z-index: 1;
+    backdrop-filter: blur(1.25rem);
+    -webkit-backdrop-filter: blur(1.25rem);
+    width: 100%;
+    height: 100%;
+    border-radius: 0rem;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 12%;
 }
 
-.circle {
-    padding: 0.25rem;
+.grid-item .card-3 .blob {
+    position: absolute;
+    z-index: -1;
+    border-radius: 5em;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
-.box {
-    display: inline-block;
-    align-items: center;
-    width: 0.625rem;
-    height: 0.625rem;
-    padding: 0.063rem;
-    border-radius: 50%;
+.grid-item .card-3 .blob:nth-child(2) {
+    left: -3.125rem;
+    top: -5.625rem;
+    background: #ff930f;
 }
 
-.red {
-    background-color: #ff605c;
+.grid-item .card-3 .blob:nth-child(3) {
+    left: 6.875rem;
+    top: -1.25rem;
+    z-index: -1;
+    background: #bf0fff;
 }
 
-.yellow {
-    background-color: #ffbd44;
+.grid-item .card-3 .blob:nth-child(4) {
+    left: -2.5rem;
+    top: 6.25rem;
+    background: #ff1b6b;
 }
 
-.green {
-    background-color: #00ca4e;
-}
-
-.card3 .card_content {
-    color: white;
+.grid-item .card-3 .blob:nth-child(5) {
+    left: 6.25rem;
+    top: 11.25rem;
+    background: #0061ff;
 }
