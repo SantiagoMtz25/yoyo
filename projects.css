@@ -227,7 +227,7 @@ nav ul li a {
 }
 
 .grid-item .card-2::before {
-    content: '---IoT Project---';
+    content: '---By Santiago Mtz---';
     letter-spacing: 0.2em;
     position: absolute;
     bottom: 0.5rem;
@@ -298,60 +298,92 @@ nav ul li a {
 }
 
 /* Cards with text */
-.grid-item .card-3 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: lightgrey;
-    box-shadow: #d11bff42 0 0.9375rem 2.5rem -0.3125rem;
-    z-index: 1;
-    border-radius: 0rem;
-    overflow: hidden;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    color: black;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.grid-item .card-3 .card__content {
-    background: linear-gradient(rgba(255, 255, 255, 0.473), rgba(150, 150, 150, 0.25));
-    z-index: 1;
-    backdrop-filter: blur(1.25rem);
-    -webkit-backdrop-filter: blur(1.25rem);
-    width: 100%;
-    height: 100%;
-    border-radius: 0rem;
-    text-align: center;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 12%;
+.content .heading {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 0.3rem;
 }
 
-.grid-item .card-3 .blob {
+.content .para {
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0.45rem; 
+}
+
+.content:hover {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 0.625rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #FFBB98 0%, #7D8E95 100%);
+    border-radius: 0.313rem;
+    box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.card-3::before {
+    content: "";
     position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.313rem;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
     z-index: -1;
-    border-radius: 5em;
-    width: 12.5rem;
-    height: 12.5rem;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.grid-item .card-3 .blob:nth-child(2) {
-    left: -3.125rem;
-    top: -5.625rem;
-    background: #ff930f;
+.card-3:hover::before {
+    height: 100%;
 }
 
-.grid-item .card-3 .blob:nth-child(3) {
-    left: 6.875rem;
-    top: -1.25rem;
-    z-index: -1;
-    background: #bf0fff;
+.card-3:hover {
+    box-shadow: none;
 }
 
-.grid-item .card-3 .blob:nth-child(4) {
-    left: -2.5rem;
-    top: 6.25rem;
-    background: #ff1b6b;
+/* Footer */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FBE0C3;
+    color: black;
+    padding: 0.625rem;
+    letter-spacing: 0.063rem;
+    opacity: 1;
+    height: auto;
 }
 
-.grid-item .card-3 .blob:nth-child(5) {
-    left: 6.25rem;
-    top: 11.25rem;
-    background: #0061ff;
+.top-div .bottom-div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-right: 1.25rem;
+}
+
+.top-div {
+    top: 0;
+}
+
+.bottom-div {
+    top: 0;
+}
+
+footer .top-div p {
+    margin-bottom: 0.313rem;
+}
+
+footer .bottom-div p {
+    margin: 0rem;
 }
