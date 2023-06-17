@@ -86,6 +86,8 @@ nav ul li a {
     .dropdown-content {
         display: none;
         position: absolute;
+        right: 0; 
+        top: 100%;
         background-color: #344648;
         z-index: 1;
     }
