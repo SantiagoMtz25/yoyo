@@ -23,7 +23,7 @@ header {
 }
 
 .name1 {
-    margin-left: 0px;
+    margin-left: 0rem;
     font-size: 1.563rem;
     letter-spacing: 1.25rem;
     color: white;
@@ -105,6 +105,13 @@ nav ul li a {
 }
 
 /* Contents */
+.topfive {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.125rem;
+}
+
 .parent-div {
     display: flex;
     justify-content: center;
@@ -121,10 +128,9 @@ nav ul li a {
 
 /* Quotes content */
 .card {
-    width: 190px;
-    height: 254px;
+    width: auto;
+    height: auto;
     background: rgb(183, 226, 25);
-    font-family: inherit;
     position: relative;
 }
 
