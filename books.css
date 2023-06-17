@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    outline: red dashed 1px;
+}
+
+header {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #344648;
+    color: white;
+    padding: 0.938rem;
+    opacity: 0.85;
+}
+
+.name1 {
+    margin-left: 0px;
+    font-size: 1.563rem;
+    letter-spacing: 1.25rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    margin-right: 0rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1.25rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 50rem) {
+    nav ul {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        margin-left: auto;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        display: block;
+        color: #fff;
+        padding: 0.625rem;
+        text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
