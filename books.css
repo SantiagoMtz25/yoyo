@@ -127,63 +127,127 @@ nav ul li a {
 }
 
 /* Quotes content */
-.card {
-    width: auto;
-    height: auto;
-    background: rgb(183, 226, 25);
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.quote-card {
+    background: $default;
+    color: $defaultTextColor;
+
+    padding: 20px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba($black, 0.12);
+
     position: relative;
+    overflow: hidden;
+    min-height: 120px;
+
+    p {
+        font-size: 22px;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 80%;
+    }
+
+    cite {
+        font-size: 16px;
+        margin-top: 10px;
+        display: block;
+        font-weight: 200;
+        opacity: 0.8;
+    }
+
+    &:before {
+        font-family: Georgia, serif;
+        content: "“";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 5em;
+        color: rgba($defaultSecondaryTextColor, 0.8);
+        font-weight: normal;
+    }
+
+    &:after {
+        font-family: Georgia, serif;
+        content: "”";
+        position: absolute;
+        bottom: -110px;
+        line-height: 100px;
+        right: -32px;
+        font-size: 25em;
+        color: rgba($defaultSecondaryTextColor, 0.8);
+        font-weight: normal;
+    }
+
+    @media(max-width: 640px) {
+        &:after {
+            font-size: 22em;
+            right: -25px;
+        }
+    }
+
+
+    &.blue-card {
+        background: $blue;
+        color: $blueTextColor;
+        box-shadow: 0 1px 2px rgba($black, 0.12), 0 2px 4px rgba($black, 0.24);
+
+        &:before,
+        &:after {
+            color: $blueSecondaryTextColor;
+        }
+    }
+
+    &.red-card {
+        background: $red;
+        color: $redTextColor;
+        box-shadow: 0 1px 2px rgba($black, 0.12), 0 2px 4px rgba($black, 0.24);
+
+        &:before,
+        &:after {
+            color: $redSecondaryTextColor;
+        }
+    }
+
+    &.yellow-card {
+        background: $yellow;
+        color: $yellowTextColor;
+        box-shadow: 0 1px 2px rgba($black, 0.12), 0 2px 4px rgba($black, 0.24);
+
+        &:before,
+        &:after {
+            color: $yellowSecondaryTextColor;
+        }
+    }
 }
 
-.quote {
-    color: rgb(223, 248, 134);
-    padding-left: 30px;
-    position: relative;
-}
 
-.quote:hover {
-}
+.credits {
+    margin-top: 80px;
 
-.card-name {
-    text-transform: uppercase;
-    font-weight: 700;
-    color: rgb(158, 196, 21);
-    padding: 35px;
-}
+    a {
+        color: $black;
+        text-decoration: none;
+        text-shadow: 0 0 2px rgba($black, 0.24);
+        padding-bottom: 1px;
+        display: inline-block;
+        border-bottom: 1px dashed rgba($black, 0.24);
+        opacity: 0.6;
 
-.body-text {
-    font-size: 20px;
-    font-weight: 900;
-    padding: 60px 40px 0;
-    color: #465512;
-    position: absolute;
-    top: 2vw;
-    left: 1vw;
-}
+        transition: 0.3s all ease-in;
 
-.author {
-    margin-top: 5px;
-    opacity: 0;
-    transition: 0.5s;
-}
 
-.card:hover .author {
-    opacity: 1;
-}
-
-.pic {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(158, 196, 21);
-    border-radius: 50%;
-}
-
-.author-container {
-    display: flex;
-    align-items: center;
-}
-
-.author {
-    font-weight: 700;
-    color: rgb(158, 196, 21);
-    padding-left: 30px;
+        &:hover {
+            border-bottom-style: solid;
+            opacity: 1;
+        }
+    }
 }
