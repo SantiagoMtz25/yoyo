@@ -136,6 +136,23 @@ nav ul li a {
     transform: scale(1.03);
 }
 
+.card-green {
+    background-color: #344648;
+    color: white;
+}
+
+.card-orange {
+    background-color: #FFBB98;
+}
+
+.card-yellow {
+    background-color: lightyellow;
+}
+
+.card-gray {
+    background-color: lightgray;
+}
+
 @media (max-width: 50rem) {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
