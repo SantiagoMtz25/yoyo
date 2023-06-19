@@ -109,8 +109,20 @@ nav ul li a {
 }
 
 /* Image Carousel */
+.parent {
+    display: flex;
+}
+
+.carousel {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    width: 40%;
+}
+
 .slider {
-    width: 300px;
+    width: 28.125rem;
     text-align: center;
     overflow: hidden;
     background-color: mediumturquoise;
@@ -118,29 +130,20 @@ nav ul li a {
 
 .slides {
     display: flex;
-
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-
-
-
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-
-    /*
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-    */
 }
 
 .slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
 }
 
 .slides::-webkit-scrollbar-thumb {
     background: black;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .slides::-webkit-scrollbar-track {
@@ -150,24 +153,23 @@ nav ul li a {
 .slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 300px;
-    height: 300px;
-    margin-right: 50px;
-    border-radius: 10px;
+    width: 28.125rem;
+    height: 35rem;
+    margin-right: 3.125rem;
+    border-radius: 0.625rem;
     background: #eee;
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 6.25rem;
 }
 
 .slides>div:target {
-    /*   transform: scale(0.8); */
+    /* transform: scale(0.8); */
 }
 
 .author-info {
@@ -204,17 +206,18 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 0 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 0;
     position: relative;
     color: #000;
 }
 
 .slider>a:active {
-    top: 1px;
+    top: 0.0625rem;
 }
 
 .slider>a:focus {
     background: #000;
+    color: #eee;
 }
 
 /* Don't need button navigation */
@@ -223,3 +226,11 @@ img {
         display: none;
     }
 }
+
+/* Content */
+.content {
+    background-color: lightgray;
+    width: 60%;
+}
+
+/* Content card */ 
